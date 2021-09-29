@@ -11,16 +11,17 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 100px;
 }
 
 body {
   width: 100%;
+  font-size: 0.17rem;
 }
 
 p {
   color: #1d1d1b;
-  font-size: 1.0625rem;
+  font-size: 0.17rem;
   line-height: 2.35;
 }
 
@@ -44,15 +45,15 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row-reverse;
-  padding-right: 30px;
-  padding-top: 20px;
+  padding-right: 0.3rem;
+  padding-top: 0.2rem;
 }
 
 nav a {
   display: block;
   text-decoration: none;
   font-family: "Futura";
-  font-size: 1.25rem;
+  font-size: 0.25rem;
   letter-spacing: 0.1em;
   color: #fff;
   padding: 15px;
@@ -62,7 +63,7 @@ nav a {
 h1 {
   font-family: "Futura";
   color: #fff;
-  font-size: 5.3125rem;
+  font-size: 0.85rem;
   letter-spacing: 0.185em;
   line-height: 90px;
   padding-left: 8.5vw;
@@ -71,7 +72,7 @@ h1 {
 }
 
 .overview-text {
-  font-size: 0.875rem;
+  font-size: 0.14rem;
   line-height: 2.143;
   color: #ffe1bb;
 }
@@ -100,51 +101,57 @@ h1 {
 }
 
 .wrapper {
-  width: 55%;
+  background: #fff url(../images/bg_1.svg) center 0 no-repeat;
+}
+
+.contents-wrapper {
+  width: 950px;
   margin: auto;
 }
 
 /* ゴール */
+section {
+  padding-top: 1.5rem;
+}
+
 #goal {
-  margin-top: 11.25rem;
+  padding-top: 1.7rem;
 }
 
 h2 {
   position: relative;
   color: #f45a21;
   font-weight: bold;
-  font-size: 2.8125rem;
-  margin-bottom: 4.375rem;
-  margin-left: 3.125rem;
+  font-size: 0.45rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.5rem;
 }
 
 h2:before {
   position: absolute;
   display: inline-block;
   content: "";
-  width: 25px;
-  height: 45px;
-  background: #fff url(../images/caption.svg) 0 0 no-repeat;
-  left: -3.125rem;
-  top: 13px;
+  width: 0.25rem;
+  height: 0.45rem;
+  background: url(../images/caption.svg) 0 0 no-repeat;
+  left: -0.5rem;
+  top: 0.13rem;
 }
 
 .goal {
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 0.28rem;
   text-align: center;
 }
 
 /* ヒアリング */
-#hearing {
-  margin: 9.375rem 0;
-}
 
 .fun {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.3rem;
 }
 
 .funimg {
@@ -154,50 +161,324 @@ h2:before {
 
 .fun p {
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 0.28rem;
   margin: 0 4%;
 }
 
 .fun-text {
-  font-size: 1.875rem;
+  font-size: 0.35rem;
   text-align: center;
   font-weight: bold;
-  margin-top: 2.5rem;
+  background-image: url(../images/asobi_1.svg);
+  background-position: 32% 70%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  padding: 0.4rem 0 0.3rem;
 }
 
 .love-text {
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 0.2rem;
   text-align: center;
-  padding-top: 15px;
 }
 
 .fun-heart {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 50vh;
 }
 
 .purpose {
   font-weight: bold;
   text-align: center;
-  font-size: 1.125rem;
-  margin-top: 6.25rem;
+  font-size: 0.2rem;
+  margin-top: 1rem;
 }
 
 .purpose-text {
   font-weight: bold;
   text-align: center;
-  font-size: 2.1875rem;
-  margin-top: 1.875rem;
+  font-size: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+/* コンセプト */
+.con-text1 {
+  font-weight: bold;
+  font-size: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.con-text2 {
+  font-size: 0.2rem;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.con-text3 {
+  font-weight: bold;
+  font-size: 0.28rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.con-text4 {
+  font-weight: bold;
+  font-size: 0.35rem;
+  text-align: center;
+}
+
+#concept ul {
+  display: flex;
+  justify-content: center;
+}
+
+.sibuya-photo {
+  list-style: none;
+  padding: 0.2rem;
+}
+
+.sibuya-photo img {
+  width: 3.4rem;
+}
+
+.tpos {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle {
+  background-color: #804036;
+  width: 0.7rem;
+  height: 0.3rem;
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  margin: 0.4rem 0 0.3rem;
+}
+
+/* 調査 */
+.brown-text {
+  color: #804036;
+}
+
+.research-box {
+  background-color: #ffe1bb;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.discover-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.3rem;
+}
+
+.world-map img {
+  width: 5rem;
+}
+
+.world-map p {
+  padding-left: 0.3rem;
+}
+
+.world-map {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.enmbassy-text {
+  margin-top: 0.2rem;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next .triangle {
+  margin-left: 3rem;
+}
+
+.next p {
+  margin-left: 0.5rem;
+  font-size: 0.2rem;
+}
+
+.world-photos {
+  display: flex;
+}
+
+.world-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.world-photo img {
+  width: 2.56rem;
+  max-width: 100%;
+}
+
+.world-photo p {
+  text-align: center;
+  margin: 0.2rem 0;
+}
+
+.darkbrown {
+  color: #540b0e;
+}
+
+.wrap-text {
+  font-size: 0.18rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+/* アイディア出し */
+.idea-image {
+  background-color: #ffe1bb;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.idea-image img {
+  width: 8.5rem;
+  max-width: 100%;
+  padding: 0.2rem 0;
+}
+
+/* 表現方法 */
+#expression p {
+  color: #804036;
+}
+
+.bg-text {
+  margin: 0.3rem 0 0.6rem;
+}
+
+.caption-text {
+  font-weight: bold;
+  font-size: 0.3rem;
+  text-align: center;
+  margin: 0.2rem 0;
+}
+
+.colors-box {
+  background-color: cornsilk;
+  border-radius: 0.3rem;
+  width: 80%;
+  margin: 0.4rem auto 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.45rem 0 0.3rem;
+}
+
+.color {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.brown {
+  background-color: #804036;
+}
+
+.orange {
+  background-color: #f45a21;
+}
+
+.yellow {
+  background-color: #fbb13c;
+}
+
+.cream {
+  background-color: #ffe1bb;
+}
+
+.green {
+  background-color: #588157;
+}
+
+.colorcode {
+  text-align: center;
+  font-size: 0.13rem;
+}
+
+.color-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.25rem;
+}
+
+.before-box {
+  background-color: cornsilk;
+  border-radius: 0.3rem;
+}
+
+.before-box img {
+  max-width: 100%;
+  padding: 0.3rem;
+}
+
+.after-box {
+  background-color: cornsilk;
+  border-radius: 0.3rem;
+}
+
+.after-box img {
+  max-width: 100%;
+  padding: 0.3rem;
+}
+
+.change {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* フィードバック */
+.good {
+  width: 80%;
+  margin: 0.9rem auto 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.good p {
+  width: 50%;
+}
+
+.more p {
+  width: 50%;
+}
+
+.more {
+  width: 80%;
+  margin: 0.7rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 今後の課題 */
+#task {
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 470px) {
   html {
     /* font-size: 3.4vw; */
-    font-size: 10px;
+    font-size: 50px;
   }
 
   nav {
@@ -212,8 +493,8 @@ h2:before {
   }
 
   h1 {
-    font-size: 2.5rem;
-    line-height: 40px;
+    font-size: 0.7rem;
+    line-height: 50px;
   }
 
   .overview {
@@ -233,11 +514,111 @@ h2:before {
     color: #804036;
   }
 
-  .wrapper {
-    width: 80%;
+  .contents-wrapper {
+    width: 85%;
   }
 
   .fun-heart {
-    height: 60vh;
+    height: 35vh;
+  }
+
+  .fun-text {
+    background: url(../images/asobi_sp.svg) 22% 70% no-repeat;
+  }
+
+  /* 調査 */
+  .world-map {
+    flex-direction: column;
+  }
+
+  .world-map p {
+    margin-top: 0.4rem;
+  }
+
+  .next {
+    display: block;
+    margin: 0.4rem 0;
+  }
+
+  .next .triangle {
+    margin: auto;
+  }
+
+  .next p {
+    text-align: center;
+    margin: auto;
+    margin-top: 0.2rem;
+    font-weight: 500;
+  }
+
+  /* 表現方法 */
+  .color {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+  .color-box {
+    margin: 0 0.1rem;
+  }
+
+  .colors-box {
+    width: 100%;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .before-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .before-box img {
+    width: 15vw;
+    height: 10vh;
+  }
+
+  .after-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .after-box img {
+    width: 15vw;
+    height: 10vh;
+  }
+
+  /* フィードバック */
+  .good {
+    display: block;
+  }
+
+  .good img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
+  .good p {
+    width: 100%;
+    margin: 0.6rem 0;
+  }
+
+  .more {
+    display: block;
+  }
+
+  .more img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
+  .more p {
+    width: 100%;
+    margin: 0.6rem 0;
   }
 }
