@@ -49,15 +49,41 @@ nav ul {
   padding-top: 0.2rem;
 }
 
-nav a {
-  display: block;
+.link {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   font-family: "Futura";
   font-size: 0.25rem;
   letter-spacing: 0.1em;
   color: #fff;
-  padding: 15px;
-  padding-right: 20px;
+  margin: 15px;
+  margin-right: 20px;
+}
+
+.link::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.link:hover::after {
+  transform: scale(1, 1);
+}
+
+.color-change {
+  color: #804036;
+}
+
+.color-change::after {
+  background: #804036;
 }
 
 h1 {
@@ -101,7 +127,7 @@ h1 {
 }
 
 .wrapper {
-  background: #fff url(../images/bg_1.svg) center 0 no-repeat;
+  background: #fff url(../images/background-04.svg) center 0 no-repeat;
 }
 
 .contents-wrapper {
@@ -258,12 +284,17 @@ h2:before {
 }
 
 /* 調査 */
+/* #research {
+  background: #fff6eb url(../images/bg-ex.svg) 0 0 no-repeat;
+  padding-bottom: 1.8rem;
+} */
+
 .brown-text {
   color: #804036;
 }
 
 .research-box {
-  background-color: #ffe1bb;
+  background-color: #fff;
   padding: 0.8rem;
   margin-top: 0.8rem;
   border-radius: 0.4rem;
@@ -342,7 +373,7 @@ h2:before {
 
 /* アイディア出し */
 .idea-image {
-  background-color: #ffe1bb;
+  background-color: #fff;
   border-radius: 0.4rem;
   padding: 0.2rem;
   display: flex;
@@ -374,7 +405,7 @@ h2:before {
 }
 
 .colors-box {
-  background-color: cornsilk;
+  background-color: #fff;
   border-radius: 0.3rem;
   width: 80%;
   margin: 0.4rem auto 0.5rem;
@@ -421,7 +452,7 @@ h2:before {
 }
 
 .before-box {
-  background-color: cornsilk;
+  background-color: #fff;
   border-radius: 0.3rem;
 }
 
@@ -431,7 +462,7 @@ h2:before {
 }
 
 .after-box {
-  background-color: cornsilk;
+  background-color: #fff;
   border-radius: 0.3rem;
 }
 
@@ -443,6 +474,27 @@ h2:before {
 .change {
   display: flex;
   justify-content: space-around;
+}
+
+/* 最終成果物 */
+.movie-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+  height: 0;
+  overflow: hidden;
+  margin: 0.2rem auto;
+}
+
+.movie-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#movie p {
+  margin-top: 0.5rem;
 }
 
 /* フィードバック */
@@ -472,7 +524,7 @@ h2:before {
 
 /* 今後の課題 */
 #task {
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 470px) {

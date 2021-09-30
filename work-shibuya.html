@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/work-shibuya.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>SHIBUYA FUN FROJECT</title>
 </head>
 
 
 <body>
-    <header>
+    <header class="js-header">
         <nav>
             <ul>
-                <li><a href="index.html">Works</a></li>
-                <li><a href="index.html">About Me</a></li>
+                <li><a class="link" href="index.html">Works</a></li>
+                <li><a class="link" href="index.html">About Me</a></li>
             </ul>
         </nav>
         <div class="main-visual">
@@ -49,7 +50,7 @@
         </div>
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="contents-wrapper">
             <section id="goal">
                 <h2>制作のゴール</h2>
@@ -57,6 +58,10 @@
             </section>
 
             <section id="hearing">
+                <div class="custom-shape-divider-top-1632981883">
+
+                </div>
+
                 <h2>ヒアリング</h2>
                 <p>授業中に一般社団法人渋谷駅前エリアマネジメントの3名にお越しいただき、SHIBUYA +FUN PROJECT
                     のコンセプト、行なっていること、共同研究で求めることについてお聞きしました。</p>
@@ -77,6 +82,7 @@
                     <p class="purpose-text">映像で <span style="background-color: #fbb13c">“渋谷らしさ”</span> 、<span
                             style="background-color: #fbb13c">“多様性”</span>を表現する</p>
                 </div>
+
             </section>
 
             <section id="concept">
@@ -97,48 +103,50 @@
             </section>
 
             <section id="research">
-                <h2>調査</h2>
-                <p class="brown-text">渋谷区の駅から少し外れたところをメインに商業施設、公共施設、
-                    文化施設などをGoogleMapでピンを立てたり、インターネットでそれらの施設について調査、
-                    実際に現地を訪れ高級住宅街の雰囲気を感じるなど調査を行いました。</p>
-                <div class="research-box">
-                    <p class="discover-text">渋谷には24カ国の大使館がある！</p>
-                    <div class="world-map">
-                        <img src="images/worldmap.jpg" alt="世界地図">
-                        <p>エストニア<br>
-                            トルクメニスタン<br>
-                            サントメプリンシペ民主共和国<br>
-                            ヨルダン<br>
-                            コンゴ共和国<br>
-                            ブルキナファソ　　　　　など</p>
-                    </div>
+                <div class="contents-wrapper">
+                    <h2>調査</h2>
+                    <p class="brown-text">渋谷区の駅から少し外れたところをメインに商業施設、公共施設、
+                        文化施設などをGoogleMapでピンを立てたり、インターネットでそれらの施設について調査、
+                        実際に現地を訪れ高級住宅街の雰囲気を感じるなど調査を行いました。</p>
+                    <div class="research-box">
+                        <p class="discover-text">渋谷には24カ国の大使館がある！</p>
+                        <div class="world-map">
+                            <img src="images/worldmap.jpg" alt="世界地図">
+                            <p>エストニア<br>
+                                トルクメニスタン<br>
+                                サントメプリンシペ民主共和国<br>
+                                ヨルダン<br>
+                                コンゴ共和国<br>
+                                ブルキナファソ　　　　　など</p>
+                        </div>
 
-                    <p class="discover-text">アフリカ・西アジア・ヨーロッパの地域の大使館が多い</p>
-                    <p class="enmbassy-text">日本にある大使館の数の地域別ランキングで渋谷区は２位！港区はアメリカやイタリアなど主要国が多いのに対し、
-                        渋谷区ではあまり聞き馴染みのない発展途上国も多いことがわかりました。</p>
-                    <div class="next">
-                        <div class="triangle"></div>
-                        <p>それぞれの国について調査</p>
+                        <p class="discover-text">アフリカ・西アジア・ヨーロッパの地域の大使館が多い</p>
+                        <p class="enmbassy-text">日本にある大使館の数の地域別ランキングで渋谷区は２位！港区はアメリカやイタリアなど主要国が多いのに対し、
+                            渋谷区ではあまり聞き馴染みのない発展途上国も多いことがわかりました。</p>
+                        <div class="next">
+                            <div class="triangle"></div>
+                            <p>それぞれの国について調査</p>
+                        </div>
+                        <div class="world-photos">
+                            <div class="world-photo">
+                                <img src="images/croatia.jpg" alt="クロアチア民族衣装">
+                                <p>クロアチア共和国<br>
+                                    民族衣装</p>
+                            </div>
+                            <div class="world-photo">
+                                <img src="images/jordan.jpg" alt="ヨルダンペトラ遺跡">
+                                <p>ヨルダン<br>
+                                    ペトラ遺跡</p>
+                            </div>
+                            <div class="world-photo">
+                                <img src="images/newzealand.jpg" alt="ニュージーランドキーウィー">
+                                <p>ニュージーランド<br>
+                                    キーウィー</p>
+                            </div>
+                        </div>
+                        <div class="discover-text darkbrown">「 24カ国の窓口、SHIBUYA 」</div>
+                        <div class="wrap-text">渋谷は24カ国にとっての窓口。たくさんの文化が渋谷に詰まっている ＝ 渋谷の多様性を伝える</div>
                     </div>
-                    <div class="world-photos">
-                        <div class="world-photo">
-                            <img src="images/croatia.jpg" alt="クロアチア民族衣装">
-                            <p>クロアチア共和国<br>
-                                民族衣装</p>
-                        </div>
-                        <div class="world-photo">
-                            <img src="images/jordan.jpg" alt="ヨルダンペトラ遺跡">
-                            <p>ヨルダン<br>
-                                ペトラ遺跡</p>
-                        </div>
-                        <div class="world-photo">
-                            <img src="images/newzealand.jpg" alt="ニュージーランドキーウィー">
-                            <p>ニュージーランド<br>
-                                キーウィー</p>
-                        </div>
-                    </div>
-                    <div class="discover-text darkbrown">「 24カ国の窓口、SHIBUYA 」</div>
-                    <div class="wrap-text">渋谷は24カ国にとっての窓口。たくさんの文化が渋谷に詰まっている ＝ 渋谷の多様性を伝える</div>
                 </div>
             </section>
 
@@ -208,6 +216,14 @@
 
             <section id="movie">
                 <h2>最終成果物</h2>
+                <div class="movie-wrapper">
+                    <iframe width="854" height="480" src="https://www.youtube-nocookie.com/embed/tIsDwn2fWPw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p>イラストはアジア→アフリカ→ヨーロッパと移り変わる。最初は渋谷をモノクロで表現。最後はカラフルな渋谷となり、渋谷に様々な文化が存在していることを表現。
+                    複雑な形状なのでモチーフが下に寄りすぎないよう心がけた。本来15秒ですがここでは時間を伸ばしています。</p>
             </section>
 
             <section id="feedback">
@@ -237,6 +253,7 @@
             </section>
         </div>
     </div>
+    <script src="js/sketch-shibuya.js"></script>
 </body>
 
 </html>
