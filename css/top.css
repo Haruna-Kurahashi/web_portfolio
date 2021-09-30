@@ -16,12 +16,12 @@ html {
 
 body {
   width: 100%;
-  font-size: 0.17rem;
+  font-size: 0.16rem;
 }
 
 p {
   color: #111111;
-  font-size: 0.17rem;
+  font-size: 0.16rem;
   line-height: 2.35;
 }
 
@@ -119,7 +119,7 @@ h1 {
 
 /* Works */
 #works {
-  height: 100vh;
+  height: 10rem;
 }
 
 h2 {
@@ -132,38 +132,367 @@ h2 {
   border-bottom: solid #111111 5px;
 }
 
-.list-works li {
-  list-style: none;
-  width: 560px;
-  height: 330px;
-  background: lightblue;
-  -webkit-box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
-  box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
-  overflow: hidden;
-  margin: 1rem;
-}
-
-.list-works .work-shibuya::before {
-  content: "";
-  /* background: url(../images/ai_brown.svg) no-repeat; */
-  position: absolute;
-  left: 0;
-
-  background-size: 100%;
-  width: 301px;
-  height: 100%;
-}
-
 .white-box {
   position: relative;
-  height: 100%;
-  padding-left: 280px;
-  z-index: 50;
+  display: flex;
+  align-items: center;
+  width: 6rem;
+  height: 3rem;
+  background-color: #fff;
+  margin: 1rem 0.5rem 0.3rem;
+  -webkit-box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
+  box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
 }
+
+.white-box img {
+  width: 3.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.tag {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 22%;
+  top: 0;
+  margin-top: 0.2rem;
+}
+
+.overview {
+  width: 40%;
+  padding-right: 0.35rem;
+  margin-top: 0.6rem;
+}
+
 .tag-text {
+  display: inline-block;
   font-size: 0.14rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #111111;
+  padding: 0 0.15rem;
+  margin: 0.07rem 0;
+}
+
+.left {
+  margin-right: 0.3rem;
 }
 
 .overview-text {
+  font-size: 0.14rem;
+  line-height: 1.85;
+}
+
+.icon-box {
+  margin-top: 0.1rem;
+}
+
+.icon-box img {
+  width: 0.3rem;
+  max-width: 100%;
+  margin-right: 0.1rem;
+}
+
+.next-page p {
+  color: #fff;
+}
+
+.next-page {
+  background-color: #111111;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  position: absolute;
+  right: -0.4rem;
+  bottom: -0.4rem;
+  padding: 0.15rem 0;
+}
+
+.next-page img {
+  display: inline-block;
+  width: 0.25rem;
+  padding-left: 0.2rem;
+}
+
+.next-page:hover {
+  background-color: #333333;
+}
+
+.next-page:hover .arrow {
+  transform: translate(10px);
+}
+
+.works-container {
+  width: 100%;
+  margin: 0.2rem 0;
+}
+
+.light {
+  float: right;
+}
+
+/* プロフィール */
+#aboutme {
+  margin-top: 1.2rem;
+}
+
+.profile {
+  margin: 1.2rem 0;
+}
+
+.name {
+  width: 2rem;
+}
+
+.name-en {
+  width: 2.1rem;
+  margin-top: 0.15rem;
+}
+
+.myphoto {
+  display: block;
+  width: 2.25rem;
+  height: auto;
+  margin-top: 0.2rem;
+  align-items: center;
+}
+
+.name-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-link {
+  width: 2.25rem;
+  padding: 0.15rem 0 0.1rem;
+  border-bottom: solid 1px #111111;
+}
+
+.linkimg {
+  padding-right: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.linkimg:hover {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.basic-info p {
+  padding-top: 0.2rem;
   font-size: 0.15rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.career {
+  width: 5.5rem;
+}
+
+.career p {
+  line-height: 2;
+}
+
+.attached-text {
+  font-size: 0.14rem;
+  line-height: 1.5;
+  color: #333333;
+  padding-left: 1.32rem;
+}
+
+.horizonal {
+  display: flex;
+}
+
+.year {
+  display: inline-block;
+
+  width: 0.8rem;
+  margin: 0 0.3rem 0 0.2rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.vertical-wrapper {
+  border-left: #c3e4ff solid 4px;
+}
+
+.caption-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.caption2 {
+  width: 80%;
+}
+
+.active-box {
+  margin-top: 1rem;
+}
+
+.do-my-best {
+  font-size: 0.25rem;
+  font-weight: bold;
+  border-bottom: solid 2px #111111;
+}
+
+.lit {
+  /* margin: 0.85rem 0; */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.lit-photo {
+  width: 4.3rem;
+  margin-left: 1rem;
+}
+
+.lit p {
+  width: 4rem;
+}
+
+.vn {
+  margin: 1.5rem 0 1.5rem 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vn-photo {
+  width: 4.3rem;
+  margin-right: 1rem;
+}
+
+.vn p {
+  width: 3.5rem;
+}
+
+/* スキル */
+#skills {
+  margin-top: 0.2rem;
+}
+.skills {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #fff;
+  margin: 0.25rem 0.25rem;
+  -webkit-box-shadow: 8px 12px 27px 6px rgb(0 0 0 / 8%);
+  box-shadow: 8px 12px 27px 6px rgb(0 0 0 / 8%);
+}
+
+.skill img {
+  width: 0.6rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.1rem;
+}
+
+.skill-img2 {
+  height: 0.6rem;
+}
+
+.skill-text {
+  font-weight: bold;
+  font-size: 0.15rem;
+  text-align: center;
+  line-height: 0;
+  margin-top: 0.2rem;
+}
+
+.java-img img {
+  width: 0.55rem;
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .contents-wrapper {
+    width: 90%;
+  }
+
+  .cut-img {
+    width: 30px;
+  }
+
+  .white-box {
+    margin: 0.5rem auto;
+  }
+
+  /* プロフィール */
+  .profile {
+    display: block;
+  }
+
+  .basic-info {
+    margin: auto;
+  }
+
+  .career {
+    margin: 0.7rem auto;
+  }
+
+  .lit {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lit-photo {
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .vn {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  .vn-photo {
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .active-box {
+    margin: 1rem 0;
+  }
 }
