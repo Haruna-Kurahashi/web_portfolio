@@ -71,9 +71,23 @@ nav ul {
 }
 
 .first-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: cadetblue;
+  padding-top: 0.2rem;
+}
+
+#gradient-canvas {
+  width: 72%;
+  height: 75vh;
+  z-index: -1;
+  position: absolute;
+  --gradient-color-1: #c3e4ff;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #eae2ff;
+  --gradient-color-4: #b9beff;
 }
 
 h1 {
@@ -90,4 +104,66 @@ h1 {
   color: #111111;
   letter-spacing: 0.12rem;
   line-height: 1.33;
+}
+
+/* body */
+.wrapper {
+  width: 100%;
+}
+
+.contents-wrapper {
+  width: 1200px;
+  margin: auto;
+  padding-top: 0.75rem;
+}
+
+/* Works */
+#works {
+  height: 100vh;
+}
+
+h2 {
+  display: inline-block;
+  font-family: "Futura";
+  font-size: 0.7rem;
+  color: #111111;
+  line-height: 1;
+  letter-spacing: 0.075rem;
+  border-bottom: solid #111111 5px;
+}
+
+.list-works li {
+  list-style: none;
+  width: 560px;
+  height: 330px;
+  background: lightblue;
+  -webkit-box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
+  box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.list-works .work-shibuya::before {
+  content: "";
+  /* background: url(../images/ai_brown.svg) no-repeat; */
+  position: absolute;
+  left: 0;
+
+  background-size: 100%;
+  width: 301px;
+  height: 100%;
+}
+
+.white-box {
+  position: relative;
+  height: 100%;
+  padding-left: 280px;
+  z-index: 50;
+}
+.tag-text {
+  font-size: 0.14rem;
+}
+
+.overview-text {
+  font-size: 0.15rem;
 }

@@ -6,28 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/top.css">
     <title>portfolio</title>
+
 </head>
 
 <header>
     <nav>
         <ul>
-            <li><a class="link" href="index.html">Works</a></li>
+            <li><a class="link" href="#works">Works</a></li>
             <li><a class="link" href="index.html">About Me</a></li>
         </ul>
     </nav>
+
+
     <div class="first-view">
-        <div class="gradation">
+        <canvas id="gradient-canvas" data-transition-in>
+        </canvas>
+        <div class="title">
             <h1>Haruna<br>
                 Kurahashi</h1>
             <p class="title-text">Portfolio</p>
         </div>
     </div>
+
 </header>
 
 <body>
     <div class="wrapper">
+        <div class="contents-wrapper">
+            <section id="works">
+                <div class="caption">
+                    <h2>Works</h2>
+                </div>
+                <div class="works-container">
+                    <ul class="list-works">
+                        <li class="work-shibuya">
+                            <a ref="work-shibuya.html">
+                                <div class="white-box">
+                                    <div class="tag">
+                                        <p class="tag-text">グラフィックデザイン</p>
+                                        <p class="tag-text">モーショングラフィクス</p>
+                                    </div>
+                                    <div class="overview">
+                                        <p class="overview-text">一般社団法人渋谷駅前エリアマネジメント様
+                                            との共同研究プロジェクトで制作中の映像作品です。</p>
+                                        <div class="icon-box">
+                                            <img src="" alt="Ai">
+                                            <img src="" alt="Ae">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="black-box">
+                                    <p>View More</p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li class="work-light">
+
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+        </div>
         <a href="work-shibuya.html">作品ページ</a>
     </div>
+
+    <script src="js/Gradient.js"></script>
+    <script src="js/top.js" type="module"></script>
 </body>
 
 </html>
