@@ -211,6 +211,10 @@ h2 {
   line-height: 1.85;
 }
 
+.light .overview {
+  margin-top: 0.3rem;
+}
+
 .icon-box {
   margin-top: 0.1rem;
 }
