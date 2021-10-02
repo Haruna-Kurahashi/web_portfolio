@@ -171,10 +171,14 @@ h2 {
   box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
 }
 
-.white-box img {
+.cut-img {
   width: 3.5rem;
-  max-width: 100%;
   height: auto;
+  max-width: 120%;
+}
+
+.cut-img-sp {
+  display: none;
 }
 
 .tag {
@@ -251,10 +255,12 @@ h2 {
 
 .next-page:hover {
   background-color: #333333;
+  transition-duration: 0.3s;
 }
 
 .next-page:hover .arrow {
   transform: translate(10px);
+  transition-duration: 0.3s;
 }
 
 .works-container {
@@ -476,19 +482,91 @@ a {
     display: none;
   }
 
-  .contents-wrapper {
-    width: 90%;
+  body {
+    width: 100%;
   }
 
-  .cut-img {
-    width: 30px;
+  .contents-wrapper {
+    width: 90%;
+    padding: 0;
+  }
+
+  h1::before {
+    width: 120%;
+    left: -20%;
+  }
+
+  .title-text::after {
+    width: 120%;
+    right: -20%;
+  }
+
+  /* 作品一覧 */
+  #works {
+    height: 130%;
+  }
+
+  .light {
+    clear: right;
   }
 
   .white-box {
-    margin: 0.5rem auto;
+    flex-direction: column;
+    align-items: center;
+    width: 4.2rem;
+    height: 6rem;
+
+    margin: 1rem 0.5rem 0.3rem;
+  }
+
+  .tag {
+    top: 35%;
+    left: 10%;
+  }
+
+  .left {
+    margin-right: 0.1rem;
+  }
+
+  .overview {
+    width: 80%;
+    padding: 0;
+    margin-top: 0.3rem;
+  }
+
+  .cut-img {
+    display: none;
+  }
+
+  .cut-img-sp {
+    display: block;
+    width: 4.2rem;
+  }
+
+  .light .tag {
+    margin-top: 0.8rem;
+  }
+
+  .white-box {
+    margin: 0.5rem 0.1rem;
+  }
+
+  .works-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
   }
 
   /* プロフィール */
+  #aboutme {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   .profile {
     display: block;
   }
@@ -525,5 +603,32 @@ a {
 
   .active-box {
     margin: 1rem 0;
+  }
+
+  .caption-box {
+    display: block;
+  }
+
+  .caption2 {
+    width: 70%;
+    margin: auto;
+  }
+
+  .do-my-best {
+    text-align: center;
+  }
+
+  .vn {
+    margin-top: 1rem;
+  }
+
+  .vn p {
+    width: 4rem;
+  }
+
+  /* スキル */
+
+  .skills {
+    margin: 0.7rem 0.2rem;
   }
 }

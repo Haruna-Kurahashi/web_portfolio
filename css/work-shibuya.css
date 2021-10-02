@@ -565,15 +565,29 @@ h2:before {
     border-radius: 15px;
     padding: 7%;
     width: 85%;
-    margin-top: 40px;
   }
 
   .overview-text-sp {
     color: #804036;
   }
 
+  .wrapper {
+    padding-top: 0.8rem;
+  }
+
   .contents-wrapper {
     width: 85%;
+  }
+
+  /* ゴール */
+  .goal {
+    text-align: left;
+    font-size: 0.32rem;
+  }
+
+  /* ヒアリング */
+  h2::before {
+    background: url(../images/caption_sp.svg) 0 0 no-repeat;
   }
 
   .fun-heart {
@@ -584,7 +598,20 @@ h2:before {
     background: url(../images/asobi_sp.svg) 22% 70% no-repeat;
   }
 
+  .purpose-text {
+    font-size: 0.3rem;
+  }
+
+  /* コンセプト */
+  .con-text3 {
+    padding: 0 0.8rem;
+  }
+
   /* 調査 */
+  .research-box {
+    padding: 0.8rem 0.4rem;
+  }
+
   .world-map {
     flex-direction: column;
   }
@@ -610,6 +637,10 @@ h2:before {
   }
 
   /* 表現方法 */
+  .caption-text {
+    padding: 0 0.8rem;
+  }
+
   .color {
     width: 0.4rem;
     height: 0.4rem;
