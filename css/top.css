@@ -160,7 +160,27 @@ h2 {
   color: #111111;
   line-height: 1;
   letter-spacing: 0.075rem;
-  border-bottom: solid #111111 5px;
+  /* border-bottom: solid #111111 5px; */
+}
+
+.Text-Span {
+  position: relative;
+  z-index: 1;
+}
+.Text-Span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.05rem;
+  width: 0%;
+  height: 5px;
+  background: #111111;
+  z-index: -1;
+  transition: all 0.8s;
+}
+
+.Text-Span.isActive:after {
+  width: 100%;
 }
 
 .white-box {
@@ -270,6 +290,17 @@ h2 {
 .works-container {
   width: 100%;
   margin: 0.2rem 0;
+}
+
+.fuwa {
+  opacity: 0;
+  transform: translate(0, 0.5rem);
+  transition: all 500ms;
+}
+
+.fuwa.isFuwa {
+  transform: translate(0, 0px);
+  opacity: 1;
 }
 
 .light {

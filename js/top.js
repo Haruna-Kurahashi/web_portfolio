@@ -17,3 +17,25 @@ $(".link2").click(function () {
   $(".openbtn").removeClass("active"); //ボタンの activeクラスを除去し
   $(".sp-nav").removeClass("panelactive"); //ナビゲーションのpanelactiveクラスも除去
 });
+
+$(window).on("scroll", function () {
+  $(".JS_ScrollAnimationItem").each(function () {
+    var position = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > position - windowHeight + 160) {
+      $(this).addClass("isActive");
+    }
+  });
+});
+
+$(window).on("scroll", function () {
+  $(".fuwa").each(function () {
+    var position = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > position - windowHeight + 160) {
+      $(this).addClass("isFuwa");
+    }
+  });
+});
