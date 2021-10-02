@@ -14,13 +14,25 @@
 <header>
     <nav>
         <ul>
-            <li><a class="link" href="#works">Works</a></li>
             <li><a class="link" href="#aboutme">About Me</a></li>
+            <li><a class="link" href="#works">Works</a></li>
+            <li><a class="link" href="#firstview">Home</a></li>
         </ul>
     </nav>
 
+    <!-- <div class="sp-nav-container"> -->
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav class="sp-nav">
+        <ul>
+            <li><a class="link2" href="#aboutme">About Me</a></li>
+            <li><a class="link2" href="#works">Works</a></li>
+            <li><a class="link2" href="#firstview">Home</a></li>
+        </ul>
+    </nav>
+    <!-- </div> -->
 
-    <div class="first-view">
+
+    <div class="first-view" id="firstview">
         <canvas id="gradient-canvas" data-transition-in>
         </canvas>
         <h1>Haruna<br>
@@ -259,6 +271,8 @@
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/Gradient.js"></script>
     <script src="js/top.js" type="module"></script>
 </body>
