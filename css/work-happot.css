@@ -1,0 +1,714 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    "メイリオ", "Meiryo", sans-serif;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/Futura-Dem.ttf) format("truetype");
+}
+
+html {
+  font-size: 100px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-size: 0.16rem;
+}
+
+p {
+  color: #383630;
+  font-size: 0.16rem;
+  line-height: 2.35;
+}
+
+/* ファーストビュー */
+.overview {
+  margin-left: 6vw;
+  position: absolute;
+  background: #f8f5e4;
+  width: 35vw;
+  padding: 30px 50px;
+  border-left: #1c6687 0.1rem solid;
+  bottom: 5%;
+}
+
+.overview-text {
+  font-size: 0.14rem;
+  line-height: 2.143;
+  color: #1c6687;
+}
+
+.icon {
+  margin-top: 15px;
+}
+
+.icon-as {
+  width: 0.3rem;
+  margin-right: 10px;
+}
+
+.main-visual {
+  width: 100%;
+  height: 100vh;
+  background: #fff url(../images/happot/firstview.svg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 1920px;
+}
+
+nav {
+  position: fixed;
+  margin-left: auto;
+  z-index: 2;
+  width: 100%;
+}
+
+.sp-nav {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 0.3rem;
+  padding-top: 0.2rem;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Futura";
+  font-size: 0.22rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin: 15px;
+  margin-right: 20px;
+}
+
+.link::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.link:hover::after {
+  transform: scale(1, 1);
+}
+
+/*body*/
+.contents {
+  width: 1040px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 0.45rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #383630;
+  border-left: #1c6687 solid 0.12rem;
+  padding-left: 0.35rem;
+}
+
+/*SPAJAMとは*/
+#about-spajam {
+  padding-top: 1.5rem;
+  background: #f8f5e4;
+}
+
+.sub-title {
+  font-size: 0.25rem;
+  font-weight: bold;
+  line-height: 2;
+  margin-top: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+.detail {
+  width: 85%;
+  margin: auto;
+}
+
+.official-link {
+  background: #d97f72;
+  display: inline-block;
+  padding: 0.18rem 0.4rem;
+  border-radius: 0.31rem;
+  margin: 0.3rem 0;
+}
+
+.point {
+  background: #fff;
+  padding: 0.4rem 0.6rem;
+  border-left: #1c6687 solid 0.08rem;
+  width: 80%;
+  margin-top: 0.3rem;
+}
+
+.exam-point {
+  color: #d97f72;
+  font-weight: 500;
+}
+
+.official-link a {
+  text-decoration: none;
+  color: #f8f5e4;
+  padding: 0 0.1rem;
+}
+
+.point ul {
+  list-style: none;
+}
+
+.point li {
+  color: #383630;
+  font-size: 0.25rem;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.sub-list li {
+  font-size: 0.15rem;
+  font-weight: 500;
+  margin-left: 0.4rem;
+  margin-bottom: 0.05rem;
+}
+
+.group {
+  display: flex;
+  align-items: flex-end;
+}
+
+/*ハッカソンテーマ*/
+#goal {
+  background: #f8f5e4;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.purpose {
+  font-size: 0.3rem;
+  font-weight: bold;
+  background: #fff;
+  display: inline-block;
+  color: #d97f72;
+  padding: 0 0.4rem;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+/*アイデアの発散*/
+#idea {
+  background: #d97f72;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.white {
+  font-size: 0.45rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+  border-left: #fff solid 0.12rem;
+  padding-left: 0.35rem;
+}
+
+#idea p {
+  color: #fff;
+}
+
+#idea .white {
+  margin-bottom: 0.6rem;
+}
+
+.image-box1 img {
+  width: 8.5rem;
+  margin-top: 0.6rem;
+}
+
+.image-box2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0.4rem;
+  padding: 0.4rem 0;
+}
+
+.image-box2 img {
+  width: 6rem;
+}
+
+.image-box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+}
+
+.image-box3 img {
+  width: 5rem;
+}
+
+.kind-textbox {
+  max-width: 4.5rem;
+}
+
+.what-kind {
+  font-size: 0.3rem;
+  line-height: 2;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+/*ペルソナ*/
+#persona {
+  background: #d97f72;
+}
+
+.bg-section {
+  background: #e5a89e;
+}
+.contents-wrapper {
+  background: #fff;
+  width: 1200px;
+  margin: auto;
+}
+
+.content1 {
+  padding: 0.8rem 0;
+}
+
+.ideal {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+}
+
+.persona-text {
+  background: #f8f5e4;
+  width: 5rem;
+  padding: 0.4rem;
+  padding-left: 0.6rem;
+  border-left: #1c6687 solid 0.1rem;
+  margin: auto;
+}
+
+.caption {
+  color: #1c6687;
+  font-size: 0.3rem;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-top: 0.3rem;
+}
+
+.bold {
+  font-size: 0.2rem;
+  font-weight: bold;
+}
+
+.conclusion {
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #d97f72;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+.content3 {
+  padding-bottom: 0.6rem;
+}
+
+.bg-section2 {
+  background: #f8f5e4;
+}
+
+/*アプリの機能*/
+#app-function {
+  padding: 0.8rem 0;
+  background: #f8f5e4;
+}
+
+.flow-box {
+  position: relative;
+  padding-top: 0.8rem;
+}
+
+.flow-box img {
+  width: 6.5rem;
+}
+
+.flow-img {
+  background: #fff;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.point-cap {
+  color: #d97f72;
+  font-weight: 500;
+  position: absolute;
+  right: 32.5%;
+  top: 47%;
+}
+
+.point-text {
+  width: 3.8rem;
+  font-size: 0.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.ui-box {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 0.7rem;
+}
+.ui-box img {
+  width: 7rem;
+}
+
+/*役割分担ぎめ*/
+#member {
+  padding: 0.8rem 0;
+}
+
+#member p {
+  padding-top: 0.6rem;
+}
+
+/*デザインコンセプト*/
+#design-concept {
+  background: #d97f72;
+  padding: 0.8rem 0;
+}
+
+.origami-saving {
+  color: #fff;
+}
+
+.good-things {
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #d97f72;
+  background: #f8f5e4;
+  display: inline-block;
+  padding: 0 0.4rem;
+  border-left: #1c6687 solid 0.08rem;
+  margin: 0.8rem 0 0.4rem 0;
+}
+
+.good-things-box {
+  display: flex;
+  justify-content: center;
+}
+
+#design-concept .contents-wrapper {
+  margin-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.tonmana {
+  font-size: 0.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0.6rem;
+}
+
+.tonmana-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.4rem;
+}
+
+.tonmana-box img {
+  margin-left: 0.5rem;
+}
+
+.white-box {
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #f8f5e4;
+}
+
+.blue-box {
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #1c6687;
+}
+
+.pink-box {
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #d97f72;
+}
+
+.color-code-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-font {
+  margin-right: 0.8rem;
+  width: 35%;
+}
+
+.color-font p {
+  margin-top: 0.15rem;
+}
+
+.font-point {
+  font-size: 0.22rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.positive {
+  margin-top: 1rem;
+  font-size: 0.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1c6687;
+}
+
+.origami {
+  display: block;
+  margin: 0.2rem auto;
+}
+
+.positive-arrow {
+  display: block;
+  margin: auto;
+  width: 65%;
+}
+
+.bottle {
+  width: 3rem;
+}
+
+.blue-arrow {
+  width: 0.9rem;
+}
+
+.bottle-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.75rem;
+}
+
+.stack-origami {
+  font-size: 0.25rem;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+}
+
+#final-output {
+  padding: 0.8rem;
+  background: #1c6687;
+}
+
+#final-output img {
+  margin: 0.6rem 0 0.2rem 0;
+}
+
+#final-output p {
+  color: #fff;
+}
+
+.award {
+  margin-top: 0.4rem;
+  font-size: 0.25rem;
+  font-weight: bold;
+}
+
+#leaning {
+  background: #1c6687;
+  padding: 0.4rem 0 1.2rem 0;
+}
+
+#leaning p {
+  color: #fff;
+}
+
+.team {
+  font-size: 0.3rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    /* font-size: 3.4vw; */
+    font-size: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .sp-nav {
+    display: block;
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+
+    top: -40%;
+    left: 0;
+    width: 100%;
+    height: 40vh; /*ナビの高さ*/
+    background: #fff;
+    opacity: 0.95;
+    /*動き*/
+    transition: all 0.6s;
+    -webkit-box-shadow: 0px 5px 27px 6px rgb(0 0 0 / 9%);
+    box-shadow: 0px 5x 27px 6px rgb(0 0 0 / 9%);
+  }
+
+  .sp-nav.panelactive {
+    top: 0;
+  }
+
+  .sp-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*リストのレイアウト設定*/
+  .sp-nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sp-nav li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .sp-nav.panelactive .link2:hover {
+    color: #333333;
+  }
+
+  .link2 {
+    font-family: "Futura";
+    color: #111111;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.3rem;
+  }
+
+  .openbtn {
+    position: fixed;
+    z-index: 9999; /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*×に変化*/
+  .openbtn span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 45%;
+  }
+
+  .color-change span {
+    background-color: #804036;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+
+  .contents {
+    width: 85%;
+  }
+
+  .group {
+    display: block;
+  }
+
+  /*アイデアの発散*/
+  .image-box1 img {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+  .image-box3 {
+    display: block;
+  }
+
+  .image-box3 img {
+    display: block;
+    margin: auto;
+  }
+
+  .kind-textbox {
+    max-width: 100%;
+  }
+}
