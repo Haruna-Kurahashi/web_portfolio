@@ -196,6 +196,7 @@ h2 {
 }
 
 .cut-img {
+  margin-top: 0.05rem;
   width: 3.5rem;
   height: auto;
   max-width: 120%;
@@ -304,8 +305,21 @@ h2 {
   opacity: 1;
 }
 
-.light {
+.happot {
   float: right;
+}
+
+.happot .right {
+  margin-left: 0.1rem;
+}
+
+.happot .icon-box {
+  display: flex;
+  align-items: center;
+}
+
+.happot .icon-box img {
+  margin-right: 0.15rem;
 }
 
 /* プロフィール */
@@ -464,10 +478,16 @@ a {
 
 /* スキル */
 #skills {
-  margin-top: 0.2rem;
+  padding-top: 0.4rem;
 }
+
+.skill-motto {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .skills {
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -709,6 +729,10 @@ a {
     align-items: center;
   }
 
+  .happot .tag {
+    margin-top: 0.6rem;
+  }
+
   /* プロフィール */
   #aboutme {
     margin-top: 1rem;
@@ -778,5 +802,11 @@ a {
 
   .skills {
     margin: 0.7rem 0.2rem;
+  }
+
+  .skill-motto {
+    text-align: left;
+    width: 90%;
+    margin: 1rem auto 0.3rem auto;
   }
 }
