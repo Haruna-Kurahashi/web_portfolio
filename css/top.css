@@ -294,6 +294,49 @@ h2 {
   margin: 0.2rem 0;
 }
 
+.induction {
+  font-size: 0.2rem;
+}
+
+.other-works {
+  padding-top: 0.5rem;
+  width: 50%;
+margin: auto;
+
+}
+
+.redesigner {
+  width: 2rem;
+  background-color: #111111;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+  margin: auto;
+  margin-top: 0.3rem;
+}
+
+.redesigner p{
+color: #fff;
+
+}
+
+.redesigner:hover {
+  background-color: #333333;
+  transition-duration: 0.3s;
+}
+
+.redesigner:hover .arrow {
+  transform: translate(10px);
+  transition-duration: 0.3s;
+}
+
+.redesigner img {
+  display: inline-block;
+  padding-left: 0.2rem;
+}
+
 .fuwa {
   opacity: 0;
   transform: translate(0, 0.5rem);
